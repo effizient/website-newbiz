@@ -21,9 +21,85 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Effizient Immigration Inc.</title>
-  <meta content="We are here to provide immigration and citizenship consulting for people coming to Canada. We provide help with visas and permits as well as immigration appeals." name="description">
-  <meta content="immigration,visa,canada,ircc,cic,study,work,immigrate,move,appeals,immigration consultant,immigration consultancy,naturalization,service," name="keywords">
+  <title>Canadian Immigration Services | Express Entry, Study & Work Permits | Effizient Immigration Inc.</title>
+  <meta content="Professional Canadian immigration services. Expert help with Express Entry, study permits, work permits, and immigration appeals. Licensed immigration consultants serving Canada. Free consultation available." name="description">
+  <meta content="canadian immigration,express entry,study permit,work permit,immigration consultant,visa application,canada immigration,ircc,cic,immigration services,immigration appeals,canadian visa,permanent residence,immigration lawyer,immigration consultancy" name="keywords">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://effizient.ca/">
+  <meta property="og:title" content="Canadian Immigration Services | Effizient Immigration Inc.">
+  <meta property="og:description" content="Professional Canadian immigration services. Expert help with Express Entry, study permits, work permits, and immigration appeals. Licensed immigration consultants.">
+  <meta property="og:image" content="https://effizient.ca/assets/img/logo.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://effizient.ca/">
+  <meta property="twitter:title" content="Canadian Immigration Services | Effizient Immigration Inc.">
+  <meta property="twitter:description" content="Professional Canadian immigration services. Expert help with Express Entry, study permits, work permits, and immigration appeals.">
+  <meta property="twitter:image" content="https://effizient.ca/assets/img/logo.png">
+
+  <!-- Additional SEO Meta Tags -->
+  <meta name="author" content="Effizient Immigration Inc.">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://effizient.ca/">
+  
+  <!-- Structured Data for Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LegalService",
+    "name": "Effizient Immigration Inc.",
+    "description": "Professional Canadian immigration services and consulting",
+    "url": "https://effizient.ca",
+    "logo": "https://effizient.ca/assets/img/logo.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "CA"
+    },
+    "serviceType": "Immigration Services",
+    "areaServed": "Canada",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Immigration Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Express Entry Immigration"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Study Permit Applications"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Work Permit Applications"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Immigration Appeals"
+          }
+        }
+      ]
+    }
+  }
+  </script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -191,6 +267,75 @@
         margin-top: 15px;
       }
     }
+
+    /* Side App Button Styles */
+    .side-app-button {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1000;
+    }
+
+    .btn-try-app {
+      background: linear-gradient(135deg, #ff3838 0%, #ff4757 100%);
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      box-shadow: 0 8px 25px rgba(255, 56, 56, 0.3);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 80px;
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-try-app:hover {
+      background: linear-gradient(135deg, #ff4757 0%, #ff3838 100%);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 35px rgba(255, 56, 56, 0.4);
+    }
+
+    .btn-try-app i {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+
+    .btn-try-app span {
+      font-size: 10px;
+      line-height: 1.2;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .side-app-button {
+        right: 10px;
+        top: auto;
+        bottom: 20px;
+        transform: none;
+      }
+      
+      .btn-try-app {
+        padding: 12px 15px;
+        min-width: 70px;
+      }
+      
+      .btn-try-app i {
+        font-size: 20px;
+      }
+      
+      .btn-try-app span {
+        font-size: 9px;
+      }
+    }
   </style>
 
   <!-- =======================================================
@@ -289,16 +434,24 @@
     <div class="container" data-aos="fade-up">
 
       <div class="intro-img" data-aos="zoom-out" data-aos-delay="200">
-        <img src="assets/img/intro-img.svg" alt="" class="img-fluid">
+        <img src="assets/img/intro-img.svg" alt="Canadian Immigration Services - Professional immigration consulting for Canada" class="img-fluid">
       </div>
 
       <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
-        <h2>We provide<br><span>Canadian immigration and education</span><br>solutions!</h2>
+        <h1>Your reliable<br><span>tech-first immigration</span><br>solution firm!</h1>
         <div>
           <a href="https://square.site/book/GEETYGBYCEVTW/effizient-immigration-inc" target="_blank" class="btn-get-started scrollto">Consult Us</a>
-          <a href="https://forms.zohopublic.com/info4322/form/preassementform/formperma/4s0t53u3zwv8kZK5XWZxO0GhH6mzhlr8fWSUeEi2tXA" target="_blank" class="btn-services scrollto">Get Assessed!      </a>
+          <a href="https://forms.zohopublic.com/info4322/form/preassementform/formperma/4s0t53u3zwv8kZK5XWZxO0GhH6mzhl8fWSUeEi2tXA" target="_blank" class="btn-services scrollto">Get Assessed!</a>
           <a href="resources.html" target="_blank" class="btn-get-started scrollto">Resources</a>
           <a href="https://effizient-immigration-inc.square.site/s/shop" target="_blank" class="btn-get-started scrollto">Shop with us</a>
+        </div>
+        
+        <!-- Side App Button -->
+        <div class="side-app-button">
+          <a href="https://app.effizient.ca" target="_blank" class="btn-try-app">
+            <i class="fa fa-mobile"></i>
+            <span>Try Our App</span>
+          </a>
         </div>
       </div>
 
@@ -381,12 +534,12 @@
     </section><!-- End Why Us Section -->
 
     <!-- ======= Services Section ======= -->
-    <section id="services" class="section-bg">
+    <section id="services" class="section-bg" itemscope itemtype="https://schema.org/Service">
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h3>Services</h3>
-          <p>We can help you with a variety of immigration needs. Whether you like to visit Canada or immigrate to Canada or even become a proud Canadian, we are here to help. We can also help in immigration appeals with Immigration Appeal Division.</p>
+          <h3 itemprop="name">Services</h3>
+          <p itemprop="description">We can help you with a variety of immigration needs. Whether you like to visit Canada or immigrate to Canada or even become a proud Canadian, we are here to help. We can also help in immigration appeals with Immigration Appeal Division.</p>
         </header>
 
         <div class="row justify-content-center">
@@ -554,7 +707,7 @@
           </div>
 
           <div class="col-lg-6 background order-lg-2" data-aos="zoom-in">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="">
+            <img src="assets/img/about-img.svg" class="img-fluid" alt="About Effizient Immigration - Professional Canadian immigration services">
           </div>
         </div>
 

@@ -420,20 +420,20 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-#intro .intro-info h2 {
+#intro .intro-info h1 {
   color: #fff;
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 700;
 }
 
-#intro .intro-info h2 span {
+#intro .intro-info h1 span {
   color: #74b5fc;
   text-decoration: underline;
 }
 
 @media (max-width: 767px) {
-  #intro .intro-info h2 {
+  #intro .intro-info h1 {
     font-size: 34px;
     margin-bottom: 30px;
   }

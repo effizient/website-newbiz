@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://effizient.ca/sitemap.xml
+
+# Disallow admin or private areas (if any)
+Disallow: /forms/
+Disallow: /checklists/
+
+# Allow important pages
+Allow: /index.html
+Allow: /resources.html
+Allow: /french.html
+Allow: /legal-disclaimer.html
+Allow: /blog/
+Allow: /assets/
+
+# Crawl delay (optional)
+Crawl-delay: 1 

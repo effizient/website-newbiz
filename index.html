@@ -115,11 +115,18 @@
 
     /* App Announcement Banner Styles */
     .app-announcement {
-      background: linear-gradient(135deg, #3891DE 0%, #1A2238 100%);
+      background: linear-gradient(135deg, #ff4757 0%, #ff3838 100%);
       color: white;
       padding: 15px 0;
       position: relative;
       z-index: 1000;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(255, 71, 87, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 71, 87, 0); }
     }
 
     .announcement-content {
@@ -128,23 +135,27 @@
     }
 
     .btn-app-launch {
-      background: rgba(255, 255, 255, 0.2);
-      color: white;
-      padding: 8px 20px;
+      background: rgba(255, 255, 255, 0.25);
+      color: #ff3838;
+      padding: 10px 25px;
       border-radius: 25px;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 700;
       transition: all 0.3s ease;
-      border: 2px solid rgba(255, 255, 255, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.4);
       display: inline-block;
       margin-right: 15px;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
     }
 
     .btn-app-launch:hover {
-      background: rgba(255, 255, 255, 0.3);
-      color: white;
+      background: white;
+      color: #ff3838;
       text-decoration: none;
-      transform: translateY(-2px);
+      transform: translateY(-3px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
 
     .btn-close-banner {
@@ -251,17 +262,17 @@
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-8">
-          <div class="announcement-content">
-            <i class="fa fa-mobile fa-2x" style="color: #3891DE; margin-right: 15px;"></i>
-            <div>
-              <h4 style="margin: 0; color: white; font-weight: 600;">🚀 New: Effizient Immigration App</h4>
-              <p style="margin: 5px 0 0 0; color: rgba(255,255,255,0.9); font-size: 0.9rem;">Access professional templates, calculators, and tools all in one place!</p>
+                      <div class="announcement-content">
+              <i class="fa fa-mobile fa-2x" style="color: white; margin-right: 15px; text-shadow: 0 2px 4px rgba(0,0,0,0.3);"></i>
+              <div>
+                <h4 style="margin: 0; color: white; font-weight: 700; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">🚀 NEW: Effizient Immigration App</h4>
+                <p style="margin: 5px 0 0 0; color: rgba(255,255,255,0.95); font-size: 0.9rem; font-weight: 500;">Access professional templates, calculators, and tools all in one place!</p>
+              </div>
             </div>
-          </div>
         </div>
         <div class="col-lg-4 text-right">
           <a href="https://app.effizient.ca" target="_blank" class="btn-app-launch">
-            <i class="fa fa-external-link"></i> Launch App
+            <i class="fa fa-external-link"></i> LAUNCH APP NOW
           </a>
           <button class="btn-close-banner" onclick="closeAppBanner()">
             <i class="fa fa-times"></i>

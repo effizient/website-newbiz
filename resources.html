@@ -5,9 +5,9 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Immigration Resources</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Immigration Resources - Effizient Immigration Inc.</title>
+  <meta content="Free immigration tools, templates, and resources to help with your Canadian immigration journey. Templates for letters, calculators, and guides." name="description">
+  <meta content="immigration resources,canada immigration tools,templates,visa application,study permit,work permit" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -31,12 +31,247 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NewBiz - v2.2.0
-  * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <style>
+    :root {
+      --primary-color: #1A2238;
+      --accent-color: #3891DE;
+      --secondary-color: #2c3e50;
+      --background-color: #F6F7FB;
+      --text-color: #22223B;
+      --card-bg: rgba(255, 255, 255, 0.95);
+      --border-radius: 12px;
+      --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #f8f9fa;
+      min-height: 100vh;
+    }
+
+    .resources-hero {
+      background: linear-gradient(135deg, #3891DE 0%, #1A2238 100%);
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .resources-hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+    }
+
+    .resources-hero p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .search-section {
+      background: var(--card-bg);
+      backdrop-filter: blur(10px);
+      border-radius: var(--border-radius);
+      padding: 30px;
+      margin: -50px 0 50px 0;
+      box-shadow: var(--shadow);
+      position: relative;
+      z-index: 10;
+    }
+
+    .search-box {
+      border: 2px solid #e9ecef;
+      border-radius: 25px;
+      padding: 15px 25px;
+      font-size: 1.1rem;
+      transition: all 0.3s ease;
+    }
+
+    .search-box:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 0.2rem rgba(56, 145, 222, 0.25);
+    }
+
+    .category-tabs {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-bottom: 40px;
+    }
+
+    .category-tab {
+      background: var(--card-bg);
+      border: 2px solid transparent;
+      border-radius: 25px;
+      padding: 12px 25px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    .category-tab.active {
+      background: var(--accent-color);
+      color: white;
+      border-color: var(--accent-color);
+    }
+
+    .category-tab:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    .resource-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 1px solid #e9ecef;
+    }
+
+    .resource-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .resource-icon {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--accent-color), #2c3e50);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: white;
+    }
+
+    .resource-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .resource-description {
+      color: #6c757d;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .resource-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .resource-tag {
+      background: rgba(56, 145, 222, 0.15);
+      color: var(--primary-color);
+      padding: 4px 12px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .resource-btn {
+      background: var(--accent-color);
+      border: none;
+      border-radius: 25px;
+      padding: 12px 25px;
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.3s ease;
+    }
+
+    .resource-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(56, 145, 222, 0.4);
+      color: white;
+      text-decoration: none;
+      background: #2c3e50;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-header h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 15px;
+    }
+
+    .section-header p {
+      color: #6c757d;
+      font-size: 1.1rem;
+    }
+
+    .disclaimer-box {
+      background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+      border-left: 4px solid #f39c12;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .disclaimer-box h4 {
+      color: #856404;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .disclaimer-box p {
+      color: #856404;
+      margin-bottom: 0;
+      font-weight: 500;
+    }
+
+    .progress-indicator {
+      width: 100%;
+      height: 4px;
+      background: #e9ecef;
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 15px;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-color), #2c3e50);
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+
+    @media (max-width: 768px) {
+      .resources-hero h1 {
+        font-size: 2.5rem;
+      }
+      
+      .category-tabs {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding-bottom: 10px;
+      }
+      
+      .resource-card {
+        padding: 20px;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -53,138 +288,293 @@
         </a>
       </div>
 
-     
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <!-- <li><a href="#services">Services</a></li> -->
+          <li class="drop-down"><a href="">Services</a>
+            <ul>
+              <li><a href="index.html#services">Our Services</a></li>
+              <li><a href="index.html#helpinghand">Helping Hand Service</a></li>
+              <li><a href="https://square.site/book/GEETYGBYCEVTW/effizient-immigration-inc" target="_blank">Book Consultation</a></li>
+              <!-- <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li> -->
+              <li><a href="https://forms.zohopublic.com/info4322/form/preassementform/formperma/4s0t53u3zwv8kZK5XWZxO0GhH6mzhlr8fWSUeEi2tXA" target="_blank">Get Assessed</a></li>
+              <li><a href="https://forms.zohopublic.com/info4322/form/PriceQuote/formperma/Y4xiGdoWR39S0ne30v6Zgt62YFQSV--hPVQDJhkvOlA" target="_blank">Get Quote</a>
+              </li>
+              <!-- <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li> -->
+            </ul>
+          </li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li class="drop-down"><a href="">Resources</a>
+            <ul>
+              <li><a href="resources.html" target="_blank">Resources</a></li>
+              <li><a href="french.html" target="_blank">Learn French</a></li>
+              <li><a href="legal-disclaimer.html" target="_blank">Legal Disclaimer</a></li>
+            </ul>
+          </li>
+          <li><a href="https://blog.effizient.ca/" target="_blank">Blog</a></li>
+          <!-- <li><a href="#news">News</a></li>                     -->
+          <li><a href="index.html#faq">FAQ</a></li>
+          <!-- <li><a href="https://effizientimmigration.as.me/schedule.php" target="_blank">Consultation</a></li>
+          <li><a href="https://effizient.typeform.com/to/f21BIo" target="_blank">Assessment</a></li> -->
+          <li><a href="index.html#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- .main-nav -->
 
     </div>
   </header><!-- #header -->
 
   <main id="main">
-
-    <!-- ======= Breadcrumbs Section ======= -->
-    <section class="breadcrumbs">
+    <!-- ======= Resources Hero Section ======= -->
+    <section class="resources-hero">
       <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Resources</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Resources</li>
-          </ol>
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <h1 data-aos="fade-up">Immigration Resources</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Free tools, templates, and guides to help you navigate your Canadian immigration journey with confidence.</p>
+          </div>
         </div>
-      </div>
-
-    </section><!-- End Breadcrumbs Section -->
-
-    <section class="inner-page pt-4">
-      <div class="container">
-      <p> <b>Disclaimer : 
-      The following information is for information purposes only and does not constitute legal advice. Kindly review the legal <a href="legal-disclaimer.html" target="_blank">disclaimer</a> before proceeding.
-      </b>
-      </p>
-    </div>
-  </section>
-        
-
-    <section class="inner-page pt-4">
-      <div class="container">
-        <h2>Templates, Tools, and Links</h2>
-        <h3>Canadian Experience Class</h3>
-          <li><a href="assets/docs/cecproofoffunds.pdf" target="_blank">Canadian Experience Class (CEC) - Proof of Funds Letter</a></li>
-          <li><a href="assets/docs/EmpLetterTemplate.pdf" target="_blank">Employment Letter Template</a></li>
-        </div>
-      </section>
-          
-
-    <section class="inner-page pt-4">
-      <div class="container">
-        <h3>Temporary Resident Visa & Super Visa</h3>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfV6mnkWgBZ9Loyf4ZdpKGwNAl2djfmdw1aQJUGnwwW_jAkNQ/viewform?usp=share_link" target="_blank">Automated Invitation Letter Generator</a></li>
-          <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSdyPSCbFYDnn4ksRMc0TAHEXOnSuCPGHjhag1tmcK17BetWmg/viewform?usp=share_link" target="_blank">Automated Financial Support Letter Generator</a></li>
-          <li><a href="https://forms.gle/ZHwH53FYt8KW3Kiy9" target="_blank">Invitation Letter Template</a></li>
-          <li><a href="https://forms.gle/KVwURCKeFTo2MJMEA" target="_blank">Letter of Financial Support Template</a></li>
-          <li><a href="https://forms.gle/CBDqLbs9qHF2sunXA" target="_blank">Visitor Visa Cover Letter Template</a></li>
-          <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5256-applying-visitor-visa-temporary-resident-visa.html#incometables" target="_blank">Minimum Necessary Income - Super Visa</a></li>
-      </div>
-    </section>
-
-    <section class="inner-page pt-4">
-      <div class="container">
-        <h3>Study Permit</h3>
-          <li><a href="https://forms.gle/wervUfsUZ9AphpqG7" target="_blank"><b>Customized SOP Generator</b></a></li>
-      </div>
-    </section>
-
-    <section class="inner-page pt-4">
-      <div class="container">
-        <h2>Eligibility Calculator - CEC and TR to PR</h2>
-          <li><a href="https://docs.google.com/spreadsheets/d/1nT0rnCeEhHd1qtP8ON9JbbKNZemuPz_rIKv1C71rfBk/edit?usp=sharing" target="_blank">Hour Eligibility Calculator</a></li>          
-        </ul>
-      </div>
-
-    <section class="inner-page pt-4">
-      <div class="container">
-        <h2>Open Work Permit - TR to PR</h2>
-          <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/tr-pr-pathway/open-work-permit.html?fbclid=IwAR2Rf2bSqz9rC5fojRKdd34EIiVpUsMKkm-wFZ5piH3KcqhLanDV1arNYsM" target="_blank">Open Work Permit Instructions - TR to PR</a></li>          
-        </ul>
-      </div>
-    </section>
-
-    <section class="inner-page pt-4">
-      <div class="container">
-    <h2>TR to PR pathway</h2>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/tr-pr-pathway.html" target="_blank">IRCC Link</a></li>
-        <li><a href="https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/permanent-residence/economic-classes/tr-pr-pathway/assessing.html" target="_blank">Assessing Instructions</a></li>
-        <li><a href="assets/docs/TRtoPR-Checklist.pdf" target="_blank">TR to PR annotated checklist</a></li>
-        <li><a href="https://docs.google.com/document/d/1jP6kIkML-UQUZabBavcJ7yLrKGrg17vkBNyqwYxgAXE/edit?usp=sharing" target="_blank">Additional Information Tables - IMM5669 and IMM5662</li>
-        <li><a href="https://docs.google.com/document/d/1smBh60egEsN_RvghtT_pQ-j4hUpfwVQmd4LfA29tZEM/edit?usp=sharing" target="_blank">PCC Application Proof Submission Template</a></li>
-        <li><a href="https://docs.google.com/document/d/1jFi9cKdljaB06h6AQLf1cUTPm64vNbFQJMc9qtkCOYE/edit?usp=sharing" target="_blank">Medical Proof of Appointment Template</a></li>
-        <li><a href="assets/docs/MistakeCorrection.pdf" target="_blank">Mistake Correction Template</a></li>
       </div>
     </section>
 
     
-
-    <!-- <section class="inner-page pt-4">
+        
+    <!-- ======= Disclaimer Section ======= -->
+    <section class="inner-page">
       <div class="container">
-        <h2>Checklist</h2>
-        <h3>International Graduate Stream</h3>
-        <ul>
-          <li>Passport Copies (Bio Pages, all pages with stamps)</li>
-          <li>Birth Certificate</li>
-          <li>Police Certificate - Any country where you lived 6 months or more in a row after turning 18. Canadian (RCMP) <b>not</b> needed at the moment. 
-            <br>(if don’t have it, proof that you have applied - Copy of the application form (photo pasted and signed) + Copy of the draft (as proof of fee payment) + Purolator shipping label (as additional proof))</br></li>
-          <li>Digital Photo (50mm * 70mm) - <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/new-immigrants/pr-card/apply-renew-replace/photo.html" target="_blank"> Photo Specs </a></li>
-          <li>IELTS TRF (or other Language Test Results) - <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-requirements/language-testing.html" target="_blank"> Acceptable Language Tests </a></li>
-          <li>Proof of education (degree/diploma, completion letter, transcripts)</li>
-          <li>Proof of Employment (Employment letter, 3 recent paystubs)</li>
-          <li>Upfront Medical Receipt, if available</li>
-        </ul>
+        <div class="disclaimer-box" data-aos="fade-up">
+          <h4><i class="fa fa-exclamation-triangle"></i> Important Disclaimer</h4>
+          <p>The following information is for informational purposes only and does not constitute legal advice. Please review our <a href="legal-disclaimer.html" target="_blank" style="color: #856404; text-decoration: underline;">legal disclaimer</a> before proceeding.</p>
+        </div>
+        </div>
+      </section>
+          
+
+
+    <!-- ======= Effizient App Section ======= -->
+    <section class="inner-page">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Effizient Immigration App</h2>
+          <p>Access our comprehensive suite of tools, templates, and eligibility calculators all in one place</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="resource-card" style="text-align: center; background: linear-gradient(135deg, var(--accent-color), #2c3e50); color: white;">
+              <div class="resource-icon" style="background: rgba(255, 255, 255, 0.2); width: 80px; height: 80px; margin: 0 auto 30px;">
+                <i class="fa fa-mobile" style="font-size: 32px;"></i>
+              </div>
+              <h3 class="resource-title" style="color: white; font-size: 2rem; margin-bottom: 20px;">Effizient Immigration App</h3>
+              <p class="resource-description" style="color: rgba(255, 255, 255, 0.9); font-size: 1.2rem; margin-bottom: 30px;">
+                Our comprehensive immigration app provides access to professional templates, eligibility calculators, 
+                personalized recommendations, and expert tools to guide your Canadian immigration journey.
+              </p>
+              <div class="resource-tags" style="justify-content: center; margin-bottom: 30px;">
+                <span class="resource-tag" style="background: rgba(255, 255, 255, 0.2); color: white;">Templates</span>
+                <span class="resource-tag" style="background: rgba(255, 255, 255, 0.2); color: white;">Calculators</span>
+                <span class="resource-tag" style="background: rgba(255, 255, 255, 0.2); color: white;">Recommendations</span>
+                <span class="resource-tag" style="background: rgba(255, 255, 255, 0.2); color: white;">Tools</span>
+              </div>
+              <a href="https://app.effizient.ca" target="_blank" class="resource-btn" style="background: white; color: var(--primary-color); font-size: 1.1rem; padding: 15px 30px;">
+                <i class="fa fa-external-link"></i> Launch Effizient App
+              </a>
+              <div class="progress-indicator">
+                <div class="progress-bar" style="width: 100%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="inner-page pt-4">
+    <!-- ======= Templates Section ======= -->
+    <section class="inner-page">
       <div class="container">
-        <h3>Essential Worker Stream</h3>
-        <p> All of the above except <b>Proof of Education</b> is needed along with:
-        <ul>
-          <li>Employment reference letters to showcase experience in essential occupations <a href="assets/docs/EmpLetterTemplate.pdf" target="_blank">(Template)</a></li>          
-        </ul>
+        <div class="section-header" data-aos="fade-up">
+          <h2>Immigration Templates</h2>
+          <p>Professional templates to help you create compelling immigration documents</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-file-text"></i>
+              </div>
+              <h3 class="resource-title">CEC Proof of Funds Letter</h3>
+              <p class="resource-description">Professional template for Canadian Experience Class proof of funds letter to demonstrate financial stability.</p>
+              <a href="assets/docs/cecproofoffunds.pdf" target="_blank" class="resource-btn">
+                <i class="fa fa-download"></i> Download Template
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-briefcase"></i>
+              </div>
+              <h3 class="resource-title">Employment Letter Template</h3>
+              <p class="resource-description">Comprehensive employment letter template for immigration applications with all required details.</p>
+              <a href="assets/docs/EmpLetterTemplate.pdf" target="_blank" class="resource-btn">
+                <i class="fa fa-download"></i> Download Template
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-file-alt"></i>
+              </div>
+              <h3 class="resource-title">Additional Information Tables</h3>
+              <p class="resource-description">Templates for IMM5669 and IMM5662 forms with detailed instructions and examples.</p>
+              <a href="https://docs.google.com/document/d/1jP6kIkML-UQUZabBavcJ7yLrKGrg17vkBNyqwYxgAXE/edit?usp=sharing" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> View Templates
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </section>
+
+    <!-- ======= Additional Tools Section ======= -->
+    <section class="inner-page">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <h2>Additional Tools</h2>
+          <p>Helpful tools and calculators for your immigration journey</p>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-envelope"></i>
+              </div>
+              <h3 class="resource-title">Invitation Letter Generator</h3>
+              <p class="resource-description">Automated tool to create personalized invitation letters for visitor visa applications.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfV6mnkWgBZ9Loyf4ZdpKGwNAl2djfmdw1aQJUGnwwW_jAkNQ/viewform?usp=share_link" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Generate Letter
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-dollar"></i>
+              </div>
+              <h3 class="resource-title">Financial Support Letter Generator</h3>
+              <p class="resource-description">Create professional financial support letters for visa applications with automated formatting.</p>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdyPSCbFYDnn4ksRMc0TAHEXOnSuCPGHjhag1tmcK17BetWmg/viewform?usp=share_link" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Generate Letter
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-file-text"></i>
+              </div>
+              <h3 class="resource-title">Invitation Letter Template</h3>
+              <p class="resource-description">Professional invitation letter template for visitor visa applications with customizable content.</p>
+              <a href="https://forms.gle/ZHwH53FYt8KW3Kiy9" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Access Template
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-file-text"></i>
+              </div>
+              <h3 class="resource-title">Letter of Financial Support Template</h3>
+              <p class="resource-description">Professional financial support letter template for visa applications with detailed structure.</p>
+              <a href="https://forms.gle/KVwURCKeFTo2MJMEA" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Access Template
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-file-text"></i>
+              </div>
+              <h3 class="resource-title">Visitor Visa Cover Letter Template</h3>
+              <p class="resource-description">Professional cover letter template for visitor visa applications with customizable content.</p>
+              <a href="https://forms.gle/CBDqLbs9qHF2sunXA" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Access Template
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+              <h3 class="resource-title">SOP Generator</h3>
+              <p class="resource-description">Generate personalized Statements of Purpose for study permit applications.</p>
+              <a href="https://forms.gle/wervUfsUZ9AphpqG7" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Generate SOP
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-chart-line"></i>
+              </div>
+              <h3 class="resource-title">Super Visa Income Calculator</h3>
+              <p class="resource-description">Check minimum income requirements for Super Visa applications based on family size.</p>
+              <a href="https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/guide-5256-applying-visitor-visa-temporary-resident-visa.html#incometables" target="_blank" class="resource-btn">
+                <i class="fa fa-external-link"></i> Check Requirements
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-  </main><!-- End #main -->
-  
-  <!-- ======= Intro Section ======= -->
-  <section id="intro" class="clearfix">
-    <div class="container" data-aos="fade-up">
-      <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
-          <a href="https://square.site/book/GEETYGBYCEVTW/effizient-immigration-inc" target="_blank" class="btn-get-started scrollto">Consult Us</a>
+
+    <!-- ======= CTA Section ======= -->
+    <section class="inner-page">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <div class="resource-card">
+              <div class="resource-icon">
+                <i class="fa fa-users"></i>
+              </div>
+              <h3 class="resource-title">Need Professional Help?</h3>
+              <p class="resource-description">Our licensed immigration consultants are here to guide you through your Canadian immigration journey with personalized support and expertise.</p>
+              <a href="https://square.site/book/GEETYGBYCEVTW/effizient-immigration-inc" target="_blank" class="resource-btn">
+                <i class="fa fa-calendar"></i> Book Consultation
+              </a>
+      </div>
         </div>
         </div>
       </div>
-    </div>
-  </section><!-- End Intro Section -->
+    </section>
+
+  </main>
+
 <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
@@ -199,12 +589,10 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#about">About us</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="https://effizientimmigration.as.me/schedule.php" target="_blank">Consultation</a></li>
-              <!-- <li><a href="#">Terms of service</a></li>
-              <li><a href="#">Privacy policy</a></li> -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#about">About us</a></li>
+              <li><a href="index.html#services">Services</a></li>
+              <li><a href="https://square.site/book/GEETYGBYCEVTW/effizient-immigration-inc" target="_blank">Consultation</a></li>
             </ul>
           </div>
 
@@ -221,7 +609,6 @@
               <a href="https://twitter.com/effizientcanada" target="_blank" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="https://www.facebook.com/Effizientinc/" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
               <a href="https://www.instagram.com/effizientinc/" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-              <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
               <a href="https://ca.linkedin.com/company/effizient-immigration-inc" target="_blank" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
 
@@ -230,9 +617,9 @@
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
             <p>For latest Canadian Immigration and policy updates, subscribe to our newsletter!</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+            <a href="https://zc.vg/Lx4Jg" target="_blank" class="btn btn-primary">
+              Subscribe to Newsletter
+            </a>
           </div>
 
         </div>
@@ -244,17 +631,10 @@
         &copy; Copyright <strong>Effizient</strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-      -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer><!-- End Footer -->
-
+  </footer>
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
@@ -272,6 +652,14 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Resources Page Custom JS -->
+  <script>
+    $(document).ready(function() {
+      // Initialize AOS
+      AOS.init();
+    });
+  </script>
 
 </body>
 

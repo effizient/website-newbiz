@@ -44,6 +44,141 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <style>
+    .app-showcase {
+      background: white;
+      border-radius: 15px;
+      padding: 40px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+
+    .app-icon {
+      margin-bottom: 30px;
+    }
+
+    .app-title {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700;
+      color: #1A2238;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    .app-description {
+      color: #6c757d;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .app-features {
+      margin: 40px 0;
+    }
+
+    .feature-item {
+      text-align: center;
+      margin-bottom: 20px;
+      padding: 15px;
+    }
+
+    .feature-item i {
+      font-size: 2rem;
+      color: #3891DE;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .feature-item span {
+      display: block;
+      font-weight: 600;
+      color: #1A2238;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .app-showcase {
+        padding: 20px;
+      }
+      
+      .app-title {
+        font-size: 1.5rem;
+      }
+      
+      .app-description {
+        font-size: 1rem;
+      }
+    }
+
+    /* App Announcement Banner Styles */
+    .app-announcement {
+      background: linear-gradient(135deg, #3891DE 0%, #1A2238 100%);
+      color: white;
+      padding: 15px 0;
+      position: relative;
+      z-index: 1000;
+    }
+
+    .announcement-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-app-launch {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      margin-right: 15px;
+    }
+
+    .btn-app-launch:hover {
+      background: rgba(255, 255, 255, 0.3);
+      color: white;
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    .btn-close-banner {
+      background: none;
+      border: none;
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 1.2rem;
+      cursor: pointer;
+      padding: 5px;
+      transition: color 0.3s ease;
+    }
+
+    .btn-close-banner:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .announcement-content {
+        flex-direction: column;
+        text-align: center;
+      }
+      
+      .announcement-content i {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+      
+      .col-lg-4.text-right {
+        text-align: center;
+        margin-top: 15px;
+      }
+    }
+  </style>
+
   <!-- =======================================================
   * Template Name: NewBiz - v2.2.0
   * Template URL: https://bootstrapmade.com/newbiz-bootstrap-business-template/
@@ -94,7 +229,7 @@
           <li><a href="#about">About Us</a></li>
           <li class="drop-down"><a href="">Resources</a>
             <ul>
-              <li><a href="resources.html" target="_blank">Resources</a></li>
+              <li><a href="resources.html">Resources</a></li>
               <li><a href="french.html" target="_blank">Learn French</a></li>
               <li><a href="legal-disclaimer.html" target="_blank">Legal Disclaimer</a></li>
             </ul>
@@ -110,6 +245,31 @@
 
     </div>
   </header><!-- #header -->
+
+  <!-- ======= App Announcement Banner ======= -->
+  <section id="app-banner" class="app-announcement">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-8">
+          <div class="announcement-content">
+            <i class="fa fa-mobile fa-2x" style="color: #3891DE; margin-right: 15px;"></i>
+            <div>
+              <h4 style="margin: 0; color: white; font-weight: 600;">🚀 New: Effizient Immigration App</h4>
+              <p style="margin: 5px 0 0 0; color: rgba(255,255,255,0.9); font-size: 0.9rem;">Access professional templates, calculators, and tools all in one place!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 text-right">
+          <a href="https://app.effizient.ca" target="_blank" class="btn-app-launch">
+            <i class="fa fa-external-link"></i> Launch App
+          </a>
+          <button class="btn-close-banner" onclick="closeAppBanner()">
+            <i class="fa fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- ======= Intro Section ======= -->
   <section id="intro" class="clearfix">
@@ -281,6 +441,63 @@
 
         <div id="zf-widget-root-id"></div> <script type="text/javascript" src='https://js.zohostatic.com/books/zfwidgets/assets/js/zf-widget.js'></script> <script> var pricingTableComponentOptions = { id: 'zf-widget-root-id', product_id: '2-b094c44ae317b899e8f24c684dfcc27dc3dba2e10af12f168164c37b73f7de5c0f561df426e9924558bcad6fd428a6fd762051d01954373987551cfd218224f5', template: 'elegant', most_popular_plan: '', is_group_by_frequency: false, isFrequencyDropdown: false, isCurrencyDropdown: false, can_show_plan_freq: true, pricebooks: [ { pricebook_id: '3714214000000011001', currency_code: 'CAD', currency_symbol: '$', plans: [ { plan_code: 'RCICConsult', url: 'https://subscriptions.zoho.com/subscribe/762051d019543739d0719046ba81643a79bc88ff48c14354ad482bf477cf719e/RCICConsult', recurring_price: '49', recurring_price_formatted: '$49.00', hp_settings_id: '3714214000000024003' }, ] }, ], group_options: [ ], plans: [ { plan_code: 'RCICConsult', selectedAddons: [ ] }, ], theme: { color: '#3891DE', theme_color_light: ''}, button_text: 'Subscribe', product_url: 'https://subscriptions.zoho.com', price_caption: '', language_code: 'en_ca', open_inSameTab: false }; ZFWidget.init('zf-pricing-table', pricingTableComponentOptions); </script>
         <!--#3891DE -->
+      </div>
+    </section>
+
+    <!-- ======= Immigration Partner App Section ======= -->
+    <section id="immigration-app" class="section-bg">
+      <div class="container" data-aos="fade-up">
+        <header class="section-header">
+          <h3>Effizient Immigration App</h3>
+          <p>Access our comprehensive suite of tools, templates, and eligibility calculators all in one place</p>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center" data-aos="fade-up">
+            <div class="app-showcase">
+              <div class="app-icon">
+                <i class="fa fa-mobile fa-4x" style="color: #3891DE;"></i>
+              </div>
+              <h4 class="app-title">Your Immigration Journey Partner</h4>
+              <p class="app-description">
+                Our comprehensive immigration app provides access to professional templates, eligibility calculators, 
+                personalized recommendations, and expert tools to guide your Canadian immigration journey. 
+                Everything you need for your immigration process in one convenient platform.
+              </p>
+              <div class="app-features">
+                <div class="row">
+                  <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                      <i class="fa fa-file-text"></i>
+                      <span>Professional Templates</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                      <i class="fa fa-calculator"></i>
+                      <span>Eligibility Calculators</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                      <i class="fa fa-lightbulb-o"></i>
+                      <span>Personalized Recommendations</span>
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-6">
+                    <div class="feature-item">
+                      <i class="fa fa-tools"></i>
+                      <span>Expert Tools</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="https://app.effizient.ca" target="_blank" class="btn-get-started scrollto">
+                <i class="fa fa-external-link"></i> Launch Effizient App
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -933,6 +1150,22 @@
   <!--ZC Popup Code Starts-->
   <script type="text/javascript" id="ZC_Forms_Popup" src="https://campaigns.zoho.com/js/optin.min.js" ></script> <script type="text/javascript">window.onload=function(){loadZCPopup('3zddc268e6cc700e164c5e69b85e15544a1b81849ee6d9dd49a20d0d2ad91aea81','ZCFORMVIEW','3z98c89f65978bad5cd78a0a132a6bb14e')}</script>
   <!--ZC Popup Code Ends-->
+
+  <!-- App Banner JavaScript -->
+  <script>
+    function closeAppBanner() {
+      document.getElementById('app-banner').style.display = 'none';
+      // Store in localStorage so it stays hidden for the session
+      localStorage.setItem('appBannerClosed', 'true');
+    }
+
+    // Check if banner was previously closed
+    document.addEventListener('DOMContentLoaded', function() {
+      if (localStorage.getItem('appBannerClosed') === 'true') {
+        document.getElementById('app-banner').style.display = 'none';
+      }
+    });
+  </script>
 </body>
 
 </html>

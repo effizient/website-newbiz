@@ -1426,7 +1426,7 @@ section {
   padding: 0 0 20px 25px;
 }
 
-.faq .faq-list a {
+.faq .faq-list > li > a {
   display: block;
   position: relative;
   font-family: #106eea;

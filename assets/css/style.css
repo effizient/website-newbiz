@@ -806,7 +806,7 @@ section {
 }
 
 #why-us .card i {
-  font-size: 48px;
+  font-size: 32px;
   padding-top: 15px;
   color: #bfddfe;
 }
@@ -817,16 +817,24 @@ section {
 }
 
 #why-us .card .metric-line {
-  margin: 8px 0 4px;
+  margin: 4px 0 8px;
 }
 
 #why-us .card .metric,
 #why-us .card .metric-suffix {
   font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 1.1;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1;
   color: #fff;
+  letter-spacing: -1px;
+}
+
+@media (max-width: 575px) {
+  #why-us .card .metric,
+  #why-us .card .metric-suffix {
+    font-size: 56px;
+  }
 }
 
 #why-us .card p {

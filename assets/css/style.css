@@ -545,6 +545,29 @@ section {
   background: #ecf5ff;
 }
 
+#helpinghand {
+  background: #fff;
+  scroll-margin-top: 90px;
+}
+
+#helpinghand .section-header p {
+  width: 100%;
+  max-width: 720px;
+  padding-bottom: 24px;
+}
+
+#helpinghand .helpinghand-widget {
+  max-width: 560px;
+  margin: 0 auto 10px;
+}
+
+#helpinghand .helpinghand-widget iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+  background: transparent;
+}
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -791,6 +814,19 @@ section {
 #why-us .card h5 {
   font-size: 22px;
   font-weight: 600;
+}
+
+#why-us .card .metric-line {
+  margin: 8px 0 4px;
+}
+
+#why-us .card .metric,
+#why-us .card .metric-suffix {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 1.1;
+  color: #fff;
 }
 
 #why-us .card p {

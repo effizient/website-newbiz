@@ -350,23 +350,35 @@
 
     @media (max-width: 768px) {
       .side-app-button {
-        right: 10px;
+        position: static;
+        right: auto;
         top: auto;
-        bottom: 20px;
+        bottom: auto;
         transform: none;
+        display: flex;
+        justify-content: center;
       }
-      
+
       .btn-try-app {
-        padding: 12px 15px;
-        min-width: 70px;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        width: 260px;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        padding: 10px 32px;
+        box-sizing: border-box;
       }
-      
+
       .btn-try-app i {
-        font-size: 20px;
+        font-size: 18px;
+        margin-bottom: 0;
       }
-      
+
       .btn-try-app span {
-        font-size: 9px;
+        font-size: 14px;
+        letter-spacing: 1px;
       }
     }
   </style>
@@ -401,7 +413,7 @@
             <ul>
               <li><a href="#services">Our Services</a></li>
               <li><a href="#helpinghand">Helping Hand Service</a></li>
-             <li><a href="consultation.html">Book Consultation</a></li>
+             <li><a href="https://effizient-immigration-inc.square.site/" target="_blank">Book Consultation</a></li>
               <!-- <li class="drop-down"><a href="#">Drop Down 2</a>
                 <ul>
                   <li><a href="#">Deep Drop Down 1</a></li>
@@ -412,8 +424,7 @@
                 </ul>
               </li> -->
               <li><a href="https://forms.zohopublic.com/info4322/form/preassementform/formperma/4s0t53u3zwv8kZK5XWZx0GhH6mzhlr8fWSUeEi2tXA" target="_blank">Get Assessed</a></li>
-              <!-- <li><a href="https://forms.zohopublic.com/info4322/form/PriceQuote/formperma/Y4xiGdoWR39S0ne30v6Zgt62YFQSV--hPVQDJhkvOlA" target="_blank">Get Quote</a> -->
-              </li>
+              <li><a href="https://wa.me/12267749168?text=Hi%2C%20I%20would%20like%20a%20quote." target="_blank" rel="noopener noreferrer">Get Quote</a></li>
               <!-- <li><a href="#">Drop Down 4</a></li>
               <li><a href="#">Drop Down 5</a></li> -->
             </ul>
@@ -451,7 +462,7 @@
           </div>
         </div>
         <div class="col-lg-4 text-right">
-          <a href="consultation.html" style="background: white; color: #dc3545; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); transition: all 0.3s ease; display: inline-block; border: 2px solid white; animation: consultationButtonGlow 2s infinite; position: relative; overflow: hidden;">
+          <a href="https://effizient-immigration-inc.square.site/" target="_blank" style="background: white; color: #dc3545; padding: 12px 30px; border-radius: 50px; text-decoration: none; font-weight: 700; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.5px; box-shadow: 0 8px 25px rgba(0,0,0,0.3); transition: all 0.3s ease; display: inline-block; border: 2px solid white; animation: consultationButtonGlow 2s infinite; position: relative; overflow: hidden;">
             <span style="position: relative; z-index: 2;">📅 Book Consultation</span>
             <div style="position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent); animation: shimmer 3s infinite;"></div>
           </a>
@@ -548,9 +559,10 @@
 
       <div class="intro-info" data-aos="zoom-in" data-aos-delay="100">
         <h1>Your reliable<br><span>tech-first immigration</span><br>solution firm!</h1>
-        <div>
-          <a href="consultation.html" class="btn-get-started scrollto" style="background-color: #dc3545; color: white; border-color: #dc3545;">Consult Us</a>
+        <div class="intro-actions">
+          <a href="https://effizient-immigration-inc.square.site/" target="_blank" class="btn-get-started scrollto" style="background-color: #dc3545; color: white; border-color: #dc3545;">Consult Us</a>
           <a href="https://forms.zohopublic.com/info4322/form/preassementform/formperma/4s0t53u3zwv8kZK5XWZxO0GhH6mzhlr8fWSUeEi2tXA" target="_blank" class="btn-services scrollto">Get Assessed!</a>
+          <a href="https://wa.me/12267749168?text=Hi%2C%20I%20would%20like%20a%20quote." target="_blank" rel="noopener noreferrer" class="btn-get-started scrollto">Get Quote</a>
           <a href="resources.html" target="_blank" class="btn-get-started scrollto">Resources</a>
           <a href="https://effizient-immigration-inc.square.site/s/shop" target="_blank" class="btn-get-started scrollto">Shop with us</a>
         </div>
@@ -591,14 +603,14 @@
           </div>
 
           <div class="col-lg-4 mb-4">
-            <div class="card" data-aos="zoom-in" data-aos-delay="200">
+            <a class="card" href="https://share.google/QfGIGknHvoJ3UDXsP" target="_blank" rel="noopener noreferrer" data-aos="zoom-in" data-aos-delay="200">
               <i class="fa fa-star"></i>
               <div class="card-body">
                 <p class="metric-line"><span class="metric" data-toggle="counter-up">4.9</span></p>
                 <h5 class="card-title">Google reviews</h5>
                 <p class="card-text">Average star rating from clients on Google.</p>
               </div>
-            </div>
+            </a>
           </div>
 
           <div class="col-lg-4 mb-4">
@@ -1352,7 +1364,7 @@
               <li><a href="#about">About us</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="app.html">App</a></li>
-              <li><a href="consultation.html">Consultation</a></li>
+              <li><a href="https://effizient-immigration-inc.square.site/" target="_blank">Consultation</a></li>
               <!-- <li><a href="#">Terms of service</a></li>
               <li><a href="#">Privacy policy</a></li> -->
             </ul>

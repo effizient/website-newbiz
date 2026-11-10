@@ -474,6 +474,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  #intro .intro-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    display: block;
+    width: 260px;
+    max-width: 100%;
+    margin: 0 0 12px;
+    box-sizing: border-box;
+  }
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -798,6 +815,23 @@ section {
   #why-us .card {
     margin: 0;
   }
+}
+
+#why-us a.card {
+  display: block;
+  height: 100%;
+  color: #fff;
+  text-decoration: none;
+}
+
+#why-us a.card:hover,
+#why-us a.card:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+#why-us a.card h5 {
+  color: #fff;
 }
 
 #why-us .card:hover {

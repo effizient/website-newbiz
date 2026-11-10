@@ -48,7 +48,6 @@ jobs:
         run: |
           echo "Verifying build structure..."
           test -f index.html && echo "✓ index.html exists"
-          test -f consultation.html && echo "✓ consultation.html exists"
           test -f app.html && echo "✓ app.html exists"
           test -f sitemap.xml && echo "✓ sitemap.xml exists"
           test -d assets && echo "✓ assets directory exists"
